@@ -1,0 +1,9 @@
+{%extends 'layout.html'%}
+{%block content%}
+<h1>Todo Page</h1>
+<form action="{%url 'save_todo' %}" method="POST">
+    {%csrf_token %}
+    {{form}}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

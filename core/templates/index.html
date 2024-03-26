@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About page </h1>
+    <h2>Hello,{{user_name}}</h2>
+    <h2> Welcome,{{address}}</h2>
+    <h2>Welcome to ,{{comapny_name}}</h2>
+    {{queryset}}
+
+    {% for todo in queryset %}<br>
+    {{todo.title}}<br>
+    {{todo.description}}
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+<h1>  Welcome</h1>
+{% block content %}
+<h1>Welcome </h1>
+{% comment %} <form action="{% url 'auth_login' %}" method="POST">
+    {% csrf_token%}
+    {{form}}
+    <button type='submit'>Submit</button>
+</form> {% endcomment %}
+{% endblock %} 

@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+<h1>  Welcome</h1>
+{% block content %}
+<h1>Register page </h1>
+{% if messages %}
+{% for message in messages%}
+{{message}}
+{%endfor%}
+{%endif%}
+<form action="{% url 'save-user' %}" method="POST">
+    {% csrf_token%}
+    {{form}}
+    <button type='submit'>Submit</button>
+</form>
+{% endblock %} 
